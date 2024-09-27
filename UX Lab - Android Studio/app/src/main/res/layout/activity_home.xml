@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpage"
+    tools:context=".homeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upper_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Welcome to Raiso"
+        android:textSize="20sp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Welcome to Raiso"
+        android:textSize="20sp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/gantinama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="email"
+        android:textSize="20sp"
+        android:textColor="#333333"/>
+
+    <ImageButton
+        android:id="@+id/itemsbtn"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:background="@drawable/items"
+        android:clickable="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/aboutusbtn"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:background="@drawable/aboutus"
+        android:clickable="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/navbar"/>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/home"
+        android:clickable="true"/>
+
+    <ImageButton
+        android:id="@+id/bag"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_toEndOf="@id/home"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/bag"
+        android:clickable="true"/>
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_toEndOf="@id/bag"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/info"
+        android:clickable="true"/>
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_toEndOf="@id/info"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/logout"
+        android:clickable="true"/>
+
+</RelativeLayout>

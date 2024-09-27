@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpage"
+    tools:context=".itemsActivity">
+
+    <ImageView
+        android:id="@+id/upperBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upper_bar" />
+
+    <TextView
+        android:id="@+id/itemsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Items"
+        android:textSize="25sp"
+        android:layout_below="@id/upperBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/itemsText"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/hotseller"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Hot Seller"
+            android:backgroundTint="#94273A5B"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/allitems"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="All Items"
+            android:backgroundTint="#273A5B"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonLayout"
+        android:layout_above="@+id/navbar">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ViewFlipper
+                android:id="@+id/caro"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:id="@+id/sarasaI"
+                android:layout_width="380dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/sarasa"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/spidolI"
+                android:layout_width="380dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/spidol"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/penggarisI"
+                android:layout_width="380dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="360dp"
+                android:background="@drawable/penggaris"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/pensilI"
+                android:layout_width="380dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="480dp"
+                android:background="@drawable/pensil"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/penghapusI"
+                android:layout_width="380dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="600dp"
+                android:background="@drawable/eraser"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/navbar"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/bag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bag"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/info"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/logout"
+            android:clickable="true" />
+    </LinearLayout>
+
+</RelativeLayout>
